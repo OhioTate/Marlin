@@ -678,9 +678,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  32.51
-    #define DEFAULT_Ki   3.13
-    #define DEFAULT_Kd  84.52
+    #define DEFAULT_Kp  32.51  //Customized TRS
+    #define DEFAULT_Ki   3.13  //Customized TRS 
+    #define DEFAULT_Kd  84.52  //Customized TRS
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -768,9 +768,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 177.82 //Customized TRS
-  #define DEFAULT_bedKi 30.87 //Customized TRS
-  #define DEFAULT_bedKd 682.83 //Customized TRS
+  #define DEFAULT_bedKp 189.11  //Customized TRS
+  #define DEFAULT_bedKi 36.94   //Customized TRS
+  #define DEFAULT_bedKd 645.49  //Customized TRS
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
   //#define BED_LIMIT_SWITCHING   // Keep the bed temperature within BED_HYSTERESIS of the target
